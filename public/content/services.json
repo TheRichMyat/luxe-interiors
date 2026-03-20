@@ -1,0 +1,25 @@
+{
+  "title": "Our Expertise",
+  "items": [
+    {
+      "title": "Interior Design",
+      "description": "Complete interior design solutions from concept to execution.",
+      "icon": "Layout"
+    },
+    {
+      "title": "Home Renovation",
+      "description": "Structural changes and modern updates to your existing space.",
+      "icon": "Home"
+    },
+    {
+      "title": "Kitchen & Bath",
+      "description": "Specialized design for the most important rooms in your home.",
+      "icon": "Droplets"
+    },
+    {
+      "title": "Custom Furniture",
+      "description": "Bespoke furniture pieces designed specifically for your space.",
+      "icon": "Armchair"
+    }
+  ]
+}

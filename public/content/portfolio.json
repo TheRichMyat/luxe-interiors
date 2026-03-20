@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Modern Living Room Renovation",
+      "thumbnail": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+      "short_description": "A modern transformation of a classic space.",
+      "details": {
+        "client": "Private Homeowner",
+        "location": "Bangkok",
+        "year": "2024",
+        "price_range": "$10,000 - $25,000",
+        "full_description": "Full renovation including layout redesign, lighting, and materials. We focused on creating an open-concept feel while maintaining cozy corners for relaxation.",
+        "images": [
+          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1600607687940-4ad236f755ca?auto=format&fit=crop&w=800&q=80"
+        ]
+      }
+    },
+    {
+      "id": "project-2",
+      "title": "Urban Loft Design",
+      "thumbnail": "https://images.unsplash.com/photo-1600607687940-4ad236f755ca?auto=format&fit=crop&w=800&q=80",
+      "short_description": "Industrial chic meets comfort in this city loft.",
+      "details": {
+        "client": "Tech Entrepreneur",
+        "location": "New York",
+        "year": "2023",
+        "price_range": "$45,000 - $60,000",
+        "full_description": "Converting an old warehouse space into a functional living and working environment. Exposed brick and steel beams were highlighted with soft textures.",
+        "images": [
+          "https://images.unsplash.com/photo-1600607687940-4ad236f755ca?auto=format&fit=crop&w=800&q=80",
+          "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80"
+        ]
+      }
+    }
+  ]
+}

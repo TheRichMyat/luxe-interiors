@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "title": "Crafting Spaces That Tell Your Story",
+    "description": "We transform ordinary houses into extraordinary homes with our bespoke design solutions and expert craftsmanship.",
+    "cta_text": "View Our Portfolio",
+    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80"
+  },
+  "stats": [
+    { "label": "Years Experience", "value": "12+" },
+    { "label": "Projects Completed", "value": "250+" },
+    { "label": "Design Awards", "value": "15" }
+  ]
+}
