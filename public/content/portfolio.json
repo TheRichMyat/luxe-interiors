@@ -48,6 +48,22 @@
           "https://images.pexels.com/photos/6588596/pexels-photo-6588596.jpeg"
         ]
       }
+    },
+    {
+      "id": "project-4",
+      "title": "Bangkok Condo Renovation",
+      "thumbnail": "https://images.pexels.com/photos/7587370/pexels-photo-7587370.jpeg",
+      "short_description": "Room Design for Mr.Riven.",
+      "details": {
+        "client": "Riven Ai Company",
+        "location": "Bangkok",
+        "year": "2026",
+        "price_range": "$1800K - $2500K",
+        "full_description": "We are building a room design for Mr. Riven from Riven Ai Company.",
+        "images": [
+          "https://images.pexels.com/photos/7587370/pexels-photo-7587370.jpeg"
+        ]
+      }
     }
   ]
 }
