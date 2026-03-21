@@ -9,7 +9,7 @@ collections:
   - name: "portfolio"
     label: "Portfolio"
     files:
-      - file: "content/portfolio.json"
+      - file: "public/content/portfolio.json"
         label: "Projects"
         name: "projects"
         format: "json"
