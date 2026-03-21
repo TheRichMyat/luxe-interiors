@@ -21,6 +21,7 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Thumbnail", name: "thumbnail", widget: "image" }
               - { label: "Short Description", name: "short_description", widget: "text" }
+
               - label: "Details"
                 name: "details"
                 widget: "object"
@@ -30,7 +31,11 @@ collections:
                   - { label: "Year", name: "year", widget: "string" }
                   - { label: "Price Range", name: "price_range", widget: "string" }
                   - { label: "Full Description", name: "full_description", widget: "text" }
+
                   - label: "Images"
                     name: "images"
                     widget: "list"
-                    field: { label: "Image", widget: "image" }
+                    field:
+                      label: "Image"
+                      name: "image"
+                      widget: "image"
