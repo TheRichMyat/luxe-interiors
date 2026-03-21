@@ -95,7 +95,7 @@ async function init() {
   }
 
   // Load Portfolio Content
-  const portfolioData = await fetchContent('portfolio.json');
+  const portfolioData = await fetchContent('/content/portfolio.json');
   if (portfolioData && portfolioData.projects) {
     const portfolioGrid = document.getElementById('portfolio-grid');
     if (portfolioGrid) {
