@@ -2,65 +2,104 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "public/images"
+public_folder: "/images"
 
 collections:
   - name: "portfolio"
     label: "Portfolio"
     files:
       - file: "content/portfolio.json"
-        label: "Portfolio Projects"
-        name: "portfolio"
+        label: "Projects"
+        name: "projects"
+        format: "json"
         fields:
           - label: "Projects"
             name: "projects"
             widget: "list"
             fields:
-              - label: "ID"
-                name: "id"
-                widget: "string"
-
-              - label: "Title"
-                name: "title"
-                widget: "string"
-
-              - label: "Thumbnail"
-                name: "thumbnail"
-                widget: "image"
-
-              - label: "Short Description"
-                name: "short_description"
-                widget: "text"
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Thumbnail", name: "thumbnail", widget: "string" }
+              - { label: "Short Description", name: "short_description", widget: "text" }
 
               - label: "Details"
                 name: "details"
                 widget: "object"
                 fields:
-                  - label: "Client"
-                    name: "client"
-                    widget: "string"
-
-                  - label: "Location"
-                    name: "location"
-                    widget: "string"
-
-                  - label: "Year"
-                    name: "year"
-                    widget: "string"
-
-                  - label: "Price Range"
-                    name: "price_range"
-                    widget: "string"
-
-                  - label: "Full Description"
-                    name: "full_description"
-                    widget: "text"
-
-                  - label: "Images"
+                  - { label: "Client", name: "client", widget: "string" }
+                  - { label: "Location", name: "location", widget: "string" }
+                  - { label: "Year", name: "year", widget: "string" }
+                  - { label: "Price Range", name: "price_range", widget: "string" }
+                  - { label: "Full Description", name: "full_description", widget: "text" }
+                  - label: "Gallery Images"
                     name: "images"
                     widget: "list"
-                    fields:
-                      - label: "Image"
-                        name: "image"
-                        widget: "image"
+                    field:
+                      { label: "Image", name: "image", widget: "string" }
+
+  - name: "home"
+    label: "Home"
+    files:
+      - file: "content/home.json"
+        label: "Home Page"
+        name: "home"
+        format: "json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "CTA Text", name: "cta_text", widget: "string" }
+              - { label: "Image", name: "image", widget: "string" }
+
+  - name: "about"
+    label: "About"
+    files:
+      - file: "content/about.json"
+        label: "About Page"
+        name: "about"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Mission", name: "mission", widget: "text" }
+          - { label: "Image", name: "image", widget: "string" }
+
+  - name: "services"
+    label: "Services"
+    files:
+      - file: "content/services.json"
+        label: "Services Page"
+        name: "services"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+  - name: "contact"
+    label: "Contact"
+    files:
+      - file: "content/contact.json"
+        label: "Contact Page"
+        name: "contact"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }
+          - label: "Social Links"
+            name: "socials"
+            widget: "list"
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
