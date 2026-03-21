@@ -1,18 +1,18 @@
 {
   "projects": [
     {
-      "id": "project-1",
+      "id": "project-3",
       "title": "Bangkok Condo Renovation",
-      "thumbnail": "project-1",
-      "short_description": "We kdafkdsjfk;sdvnldmnvkpsdjadsknvksdln",
+      "short_description": "dsaklksdnflksvn sjldfhslhflk",
+      "thumbnail": "Show Thumnail",
       "details": {
-        "client": "Riven shinn from AI company",
+        "client": "Riven Ai Information Technology Entrepreneur",
         "location": "Bangkok",
         "year": "2026",
-        "price_range": "1000000 Baht",
-        "full_description": "jdfhsdjfjsdbvjxzbvjsdafhjldh",
+        "price_range": "1,500,000 Baht - 20,000,000 Baht",
+        "full_description": "kasdjfkdlfnklsdfnsdlfkldsjfk;sdjf;ks",
         "images": [
-          "https://images.pexels.com/photos/6447384/pexels-photo-6447384.jpeg"
+          "https://images.pexels.com/photos/6434582/pexels-photo-6434582.jpeg"
         ]
       }
     }
