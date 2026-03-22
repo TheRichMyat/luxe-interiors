@@ -19,8 +19,17 @@
         <a href="#portfolio" class="hover:text-emerald-700 transition-colors">Portfolio</a>
         <a href="#contact" class="hover:text-emerald-700 transition-colors">Contact</a>
       </div>
+       <button id="menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 text-stone-900">
+  <span id="menu-icon" class="text-3xl leading-none">☰</span>
+  </button>
   </nav>
-
+        <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center space-y-8 text-xl font-medium text-stone-900 z-50 opacity-0 pointer-events-none transition-all duration-300">
+  <a href="#" class="mobile-link">Home</a>
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#portfolio" class="mobile-link">Portfolio</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+  
   <!-- Hero Section -->
   <section id="home" class="relative h-screen flex items-center pt-20 overflow-hidden">
     <div class="absolute inset-0 z-0">
