@@ -29,3 +29,12 @@
   transform: translateY(-2px);
   color: #059669; /* emerald */
 }
+
+.mobile-link {
+  transition: all 0.25s ease;
+}
+
+.mobile-link:hover {
+  transform: translateX(4px);
+  color: #059669;
+}
