@@ -192,6 +192,56 @@ async function init() {
       `).join('');
     }
   }
+  // ===== MOBILE MENU PREMIUM TOGGLE =====
+const toggleBtn = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuIcon = document.getElementById('menu-icon');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+let isMenuOpen = false;
+
+const openMenu = () => {
+  if (!mobileMenu) return;
+
+  mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+  mobileMenu.classList.add('opacity-100');
+
+  if (menuIcon) menuIcon.textContent = '✕';
+  document.body.style.overflow = 'hidden';
+
+  isMenuOpen = true;
+};
+
+const closeMenu = () => {
+  if (!mobileMenu) return;
+
+  mobileMenu.classList.remove('opacity-100');
+  mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+
+  if (menuIcon) menuIcon.textContent = '☰';
+  document.body.style.overflow = '';
+
+  isMenuOpen = false;
+};
+
+// Toggle click
+toggleBtn?.addEventListener('click', () => {
+  isMenuOpen ? closeMenu() : openMenu();
+});
+
+// Close when clicking link
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu();
+  });
+});
+
+// Close when clicking outside (optional but pro)
+mobileMenu?.addEventListener('click', (e) => {
+  if (e.target === mobileMenu) {
+    closeMenu();
+  }
+});
 }
 
 // Start the application
