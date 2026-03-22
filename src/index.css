@@ -20,3 +20,12 @@
     overflow: hidden;
   }
 }
+
+.mobile-link {
+  transition: all 0.3s ease;
+}
+
+.mobile-link:hover {
+  transform: translateY(-2px);
+  color: #059669; /* emerald */
+}
